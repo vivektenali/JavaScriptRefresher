@@ -33,3 +33,37 @@ function loginUserMessage(username = "test") {
 
 // console.log(loginUserMessage("vivek"))
 //console.log(loginUserMessage(""));
+
+//REST
+function calculateCartPrice(...price) {
+  return `${price}`;
+}
+
+//console.log(calculateCartPrice(200, 300, 400));
+
+function calculateCartPrice(val, ...price) {
+  return `${price}`;
+}
+
+console.log(calculateCartPrice(200, 300, 400));
+
+const user = {
+  username: "test",
+  price: "free",
+};
+
+function handleObject(anyObject) {
+  console.log(
+    `username is ${anyObject.username} and price is ${anyObject.price}`
+  );
+}
+
+handleObject(user);
+
+const arr = ["apple", "ball", "cat"];
+
+function returnSecondValue(anyAray) {
+  return `${anyAray[1]}`;
+}
+
+console.log(returnSecondValue(arr));
